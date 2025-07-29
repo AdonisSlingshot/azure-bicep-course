@@ -67,7 +67,7 @@ stages:
   - job: deployAzure
     displayName: deploy bicep to Azure
     pool: redhatAgent
-    dependsOn: [waitForValidation]
+    dependsOn: waitForValidation
 
     steps:
     - task: AzureCLI@2
